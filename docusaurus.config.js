@@ -25,11 +25,6 @@ const config = {
                     sidebarPath: require.resolve('./sidebars.js'),
                     editUrl: 'https://github.com/dropbox/componentbox/',
                 },
-                blog: {
-                    showReadingTime: true,
-                    editUrl:
-                        'https://github.com/dropbox/componentbox/',
-                },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
@@ -61,7 +56,6 @@ const config = {
                         label: 'API',
                     },
 
-                    {to: '/blog', label: 'Blog', position: 'left'},
                     {
                         href: 'https://github.com/dropbox/componentbox',
                         label: 'GitHub',
@@ -95,16 +89,6 @@ const config = {
                     },
                     {
                         title: 'More',
-                        items: [
-                            {
-                                label: 'Blog',
-                                to: '/blog',
-                            },
-                            {
-                                label: 'GitHub',
-                                href: 'https://github.com/dropbox/componentbox',
-                            },
-                        ],
                     },
                 ],
                 copyright: `Copyright © ${new Date().getFullYear()} Dropbox, Inc. Built with Docusaurus.`,
