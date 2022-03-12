@@ -6,6 +6,10 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import cover from '../../static/img/cover.png'
+import Divider from "../components/Divider";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import {foundation} from "react-syntax-highlighter/src/styles/hljs";
+import {simpleBanner, simpleModal, simpleScreen} from "./snippets";
 
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
@@ -59,14 +63,47 @@ function HomepageHeader() {
 
 export default function Home() {
     const {siteConfig} = useDocusaurusContext();
+
     return (
         <Layout>
             <HomepageHeader/>
             <main>
                 <HomepageFeatures/>
+                <Divider/>
+
+                <div style={{width: '100%', display: 'flex', flexDirection: "row", justifyContent: "center"}}>
+                    <div>
+                        <SyntaxHighlighter language="kotlin" style={foundation}>
+                            {simpleBanner}
+                        </SyntaxHighlighter>
+                    </div>
+                </div>
+
+                <div style={{width: '100%', display: 'flex', flexDirection: "row", justifyContent: "center"}}>
+                    <div>
+                        <SyntaxHighlighter language="kotlin" style={foundation}>
+                            {simpleModal}
+                        </SyntaxHighlighter>
+                    </div>
+                </div>
+
+                <div style={{width: '100%', display: 'flex', flexDirection: "row", justifyContent: "center"}}>
+                    <div>
+                        <SyntaxHighlighter language="kotlin" style={foundation}>
+                            {simpleScreen}
+                        </SyntaxHighlighter>
+                    </div>
+                </div>
             </main>
 
-            <div style={{display: "flex", flexDirection: "row", width: '100%', justifyContent: "center", backgroundColor: "#282C34", padding: 24}}>
+            <div style={{
+                display: "flex",
+                flexDirection: "row",
+                width: '100%',
+                justifyContent: "center",
+                backgroundColor: "#282C34",
+                padding: 24
+            }}>
                 <div style={{
                     borderRadius: 0,
                     padding: 12,
