@@ -14,7 +14,7 @@ import {simpleFragment, simpleScreen} from "../../static/snippets";
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
     return (
-        <header className={clsx('hero hero--primary', styles.heroBanner)} style={{
+        <header className={clsx(styles.heroBanner)} style={{
             fontFamily: "Space Grotesk",
             backgroundImage: `url(${cover})`,
             height: 400,
