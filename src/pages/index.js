@@ -4,8 +4,8 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import React from "react";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { atomOneLight } from "react-syntax-highlighter/src/styles/hljs";
+import { Prism } from "react-syntax-highlighter";
+import dracula from "react-syntax-highlighter/src/styles/prism/duotone-light";
 import cover from "../../static/img/cover.png";
 import { simpleFragment, simpleScreen } from "../../static/snippets";
 import Divider from "../components/Divider";
@@ -120,9 +120,9 @@ export default function Home() {
             }}
           >
             <div style={{ width: 500 }}>
-              <SyntaxHighlighter language="kotlin" style={atomOneLight}>
+              <Prism language="kotlin" style={dracula}>
                 {simpleFragment}
-              </SyntaxHighlighter>
+              </Prism>
             </div>
           </div>
 
@@ -135,9 +135,9 @@ export default function Home() {
             }}
           >
             <div style={{ width: 500 }}>
-              <SyntaxHighlighter language="kotlin" style={atomOneLight}>
+              <Prism language="kotlin" style={dracula}>
                 {simpleScreen}
-              </SyntaxHighlighter>
+              </Prism>
             </div>
           </div>
         </main>

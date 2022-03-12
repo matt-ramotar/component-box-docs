@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Docs
+title: Introduction
 ---
 
-# Test
+# Introduction
