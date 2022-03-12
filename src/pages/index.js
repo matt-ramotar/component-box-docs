@@ -8,7 +8,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import cover from '../../static/img/cover.png'
 import Divider from "../components/Divider";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import {foundation} from "react-syntax-highlighter/src/styles/hljs";
+import {atomOneLight} from "react-syntax-highlighter/src/styles/hljs";
 import {simpleFragment, simpleScreen} from "../../static/snippets";
 
 function HomepageHeader() {
@@ -73,19 +73,21 @@ export default function Home() {
 
                 <div style={{width: '100%', display: 'flex', flexDirection: "row", justifyContent: "center"}}>
                     <div style={{width: 500}}>
-                        <SyntaxHighlighter language="kotlin" style={foundation}>
+                        <SyntaxHighlighter language="kotlin" style={atomOneLight}>
                             {simpleFragment}
                         </SyntaxHighlighter>
                     </div>
                 </div>
 
+
                 <div style={{width: '100%', display: 'flex', flexDirection: "row", justifyContent: "center"}}>
                     <div style={{width: 500}}>
-                        <SyntaxHighlighter language="kotlin" style={foundation}>
+                        <SyntaxHighlighter language="kotlin" style={atomOneLight}>
                             {simpleScreen}
                         </SyntaxHighlighter>
                     </div>
                 </div>
+
             </main>
 
             <div style={{

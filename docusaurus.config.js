@@ -16,6 +16,8 @@ const config = {
     organizationName: 'dropbox',
     projectName: 'componentbox',
 
+    themes: ['@docusaurus/theme-live-codeblock'],
+
     presets: [
         [
             'classic',
@@ -87,11 +89,44 @@ const config = {
                             },
                         ],
                     },
+
+                    {
+                        title: 'Powered By',
+
+                        items: [
+                            {
+                                label: 'Jetpack Compose',
+                                href: 'https://developer.android.com/jetpack/compose',
+                            },
+                            {
+                                label: 'Zipline',
+                                href: 'https://github.com/cashapp/zipline',
+                            },
+
+
+                            {
+                                label: 'Mavericks',
+                                href: 'https://github.com/airbnb/mavericks',
+                            },
+                        ],
+                    },
+
                     {
                         title: 'More',
+
+                        items: [
+                            {
+                                label: 'About Us',
+                                href: 'https://www.dropbox.com/about',
+                            },
+                            {
+                                label: 'Jobs',
+                                href: 'https://www.dropbox.com/jobs',
+                            },
+                        ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} Dropbox, Inc. Built with Docusaurus.`,
+                copyright: `Copyright © ${new Date().getFullYear()} Dropbox, Inc.`,
             },
             prism: {
                 theme: lightCodeTheme,
