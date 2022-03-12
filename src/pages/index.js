@@ -5,36 +5,98 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import cover from '../../static/img/cover.png'
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
+    const {siteConfig} = useDocusaurusContext();
+    return (
+        <header className={clsx('hero hero--primary', styles.heroBanner)} style={{
+            fontFamily: "Space Grotesk",
+            backgroundImage: `url(${cover})`,
+            height: 400,
+            backgroundPosition: "center"
+        }}>
+            <div className="container" style={{display: 'flex', flexDirection: "column", alignItems: "center"}}>
+                <h1 className="hero__title"
+                    style={{fontFamily: "Space Grotesk", fontSize: 56, color: "#3A7AFF"}}>{siteConfig.title}</h1>
+                <p className="hero__subtitle" style={{color: "#ffffff"}}>{siteConfig.tagline}</p>
+
+                <div style={{display: "flex", flexDirection: "row"}}>
+                    <div style={{
+                        borderRadius: 0,
+                        padding: 12,
+                        backgroundColor: "#3a7aff",
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        marginRight: 16
+                    }}>
+                        <Link
+                            to="/docs" style={{color: "#282C34", fontWeight: "bold", fontSize: 24}}>
+                            Get Started
+                        </Link>
+                    </div>
+
+                    <div style={{
+                        borderRadius: 0,
+                        padding: 12,
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}>
+                        <Link
+                            to="/docs" style={{color: "#3a7aff", fontWeight: "bold", fontSize: 24}}>
+                            Take the Tutorial
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </header>
+    );
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
+    const {siteConfig} = useDocusaurusContext();
+    return (
+        <Layout>
+            <HomepageHeader/>
+            <main>
+                <HomepageFeatures/>
+            </main>
+
+            <div style={{display: "flex", flexDirection: "row", width: '100%', justifyContent: "center", backgroundColor: "#282C34", padding: 24}}>
+                <div style={{
+                    borderRadius: 0,
+                    padding: 12,
+                    backgroundColor: "#3a7aff",
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginRight: 16
+                }}>
+                    <Link
+                        to="/docs" style={{color: "#282C34", fontWeight: "bold", fontSize: 24}}>
+                        Get Started
+                    </Link>
+                </div>
+
+                <div style={{
+                    borderRadius: 0,
+                    padding: 12,
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    alignItems: "center",
+                }}>
+                    <Link
+                        to="/docs" style={{color: "#3a7aff", fontWeight: "bold", fontSize: 24}}>
+                        Take the Tutorial
+                    </Link>
+                </div>
+            </div>
+        </Layout>
+    );
 }

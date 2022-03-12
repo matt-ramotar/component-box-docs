@@ -6,113 +6,117 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+    title: 'Component Box',
+    tagline: 'A Kotlin multiplatform library for building dynamic server-driven native UI',
+    url: 'https://componentbox.io',
+    baseUrl: '/',
+    onBrokenLinks: 'throw',
+    onBrokenMarkdownLinks: 'warn',
+    favicon: 'img/favicon.ico',
+    organizationName: 'dropbox',
+    projectName: 'componentbox',
 
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
+    presets: [
+        [
+            'classic',
+            /** @type {import('@docusaurus/preset-classic').Options} */
+            ({
+                docs: {
+                    sidebarPath: require.resolve('./sidebars.js'),
+                    editUrl: 'https://github.com/dropbox/componentbox/',
+                },
+                blog: {
+                    showReadingTime: true,
+                    editUrl:
+                        'https://github.com/dropbox/componentbox/',
+                },
+                theme: {
+                    customCss: require.resolve('./src/css/custom.css'),
+                },
+            }),
+        ],
     ],
-  ],
 
-  themeConfig:
+    themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
-        items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+        ({
+            navbar: {
+                title: 'Component Box',
+                logo: {
+                    alt: 'Component Box',
+                    src: 'img/logo.png',
+                },
+                items: [
+                    {
+                        type: 'doc',
+                        docId: 'index',
+                        position: 'left',
+                        label: 'Docs',
+                    },
+
+                    {
+                        type: 'doc',
+                        docId: 'api',
+                        position: 'left',
+                        label: 'API',
+                    },
+
+                    {to: '/blog', label: 'Blog', position: 'left'},
+                    {
+                        href: 'https://github.com/dropbox/componentbox',
+                        label: 'GitHub',
+                        position: 'right',
+                    },
+                ],
+            },
+            footer: {
+                links: [
+                    {
+                        title: 'Docs',
+                        items: [
+                            {
+                                label: 'Tutorial',
+                                to: '/docs/intro',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'Community',
+                        items: [
+                            {
+                                label: 'Stack Overflow',
+                                href: 'https://stackoverflow.com/questions/tagged/componentbox',
+                            },
+                            {
+                                label: 'Twitter',
+                                href: 'https://twitter.com/dropbox',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'More',
+                        items: [
+                            {
+                                label: 'Blog',
+                                to: '/blog',
+                            },
+                            {
+                                label: 'GitHub',
+                                href: 'https://github.com/dropbox/componentbox',
+                            },
+                        ],
+                    },
+                ],
+                copyright: `Copyright © ${new Date().getFullYear()} Dropbox, Inc. Built with Docusaurus.`,
+            },
+            prism: {
+                theme: lightCodeTheme,
+                darkTheme: darkCodeTheme,
+            },
+            colorMode: {
+                disableSwitch: true
+            }
+        }),
 };
 
 module.exports = config;
