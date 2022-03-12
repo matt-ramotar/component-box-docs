@@ -9,7 +9,7 @@ import cover from '../../static/img/cover.png'
 import Divider from "../components/Divider";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {foundation} from "react-syntax-highlighter/src/styles/hljs";
-import {simpleBanner, simpleModal, simpleScreen} from "./snippets";
+import {simpleFragment, simpleScreen} from "./snippets";
 
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
@@ -72,23 +72,15 @@ export default function Home() {
                 <Divider/>
 
                 <div style={{width: '100%', display: 'flex', flexDirection: "row", justifyContent: "center"}}>
-                    <div>
+                    <div style={{width: 500}}>
                         <SyntaxHighlighter language="kotlin" style={foundation}>
-                            {simpleBanner}
+                            {simpleFragment}
                         </SyntaxHighlighter>
                     </div>
                 </div>
 
                 <div style={{width: '100%', display: 'flex', flexDirection: "row", justifyContent: "center"}}>
-                    <div>
-                        <SyntaxHighlighter language="kotlin" style={foundation}>
-                            {simpleModal}
-                        </SyntaxHighlighter>
-                    </div>
-                </div>
-
-                <div style={{width: '100%', display: 'flex', flexDirection: "row", justifyContent: "center"}}>
-                    <div>
+                    <div style={{width: 500}}>
                         <SyntaxHighlighter language="kotlin" style={foundation}>
                             {simpleScreen}
                         </SyntaxHighlighter>
