@@ -12,7 +12,7 @@ fun Screen() {
         Fallback = { Fallback() }
     )
 }
-`
+`;
 
 export const simpleFragment = `
 class Screen(

@@ -9,7 +9,7 @@ import cover from '../../static/img/cover.png'
 import Divider from "../components/Divider";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {foundation} from "react-syntax-highlighter/src/styles/hljs";
-import {simpleFragment, simpleScreen} from "./snippets";
+import {simpleFragment, simpleScreen} from "../../static/snippets";
 
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
