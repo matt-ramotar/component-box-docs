@@ -1,133 +1,148 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import cover from '../../static/img/cover.png'
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import Layout from "@theme/Layout";
+import clsx from "clsx";
+import React from "react";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneLight } from "react-syntax-highlighter/src/styles/hljs";
+import cover from "../../static/img/cover.png";
+import { simpleFragment, simpleScreen } from "../../static/snippets";
 import Divider from "../components/Divider";
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import {atomOneLight} from "react-syntax-highlighter/src/styles/hljs";
-import {simpleFragment, simpleScreen} from "../../static/snippets";
+import HomepageBottomCta from "../components/HomepageBottomCta";
+import HomepageTopBanner from "../components/HomepageTopBanner";
+import styles from "./index.module.css";
 
 function HomepageHeader() {
-    const {siteConfig} = useDocusaurusContext();
-    return (
-        <header className={clsx(styles.heroBanner)} style={{
+  const { siteConfig } = useDocusaurusContext();
+  return (
+    <header
+      className={clsx(styles.heroBanner)}
+      style={{
+        fontFamily: "Space Grotesk",
+        backgroundImage: `url(${cover})`,
+        height: 400,
+        backgroundPosition: "center",
+      }}
+    >
+      <div
+        className="container"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <h1
+          className="hero__title"
+          style={{
             fontFamily: "Space Grotesk",
-            backgroundImage: `url(${cover})`,
-            height: 400,
-            backgroundPosition: "center"
-        }}>
-            <div className="container" style={{display: 'flex', flexDirection: "column", alignItems: "center"}}>
-                <h1 className="hero__title"
-                    style={{fontFamily: "Space Grotesk", fontSize: 56, color: "#3A7AFF"}}>{siteConfig.title}</h1>
-                <p className="hero__subtitle" style={{color: "#ffffff"}}>{siteConfig.tagline}</p>
+            fontSize: 56,
+            color: "#3A7AFF",
+          }}
+        >
+          {siteConfig.title}
+        </h1>
+        <p className="hero__subtitle" style={{ color: "#ffffff" }}>
+          {siteConfig.tagline}
+        </p>
 
-                <div style={{display: "flex", flexDirection: "row"}}>
-                    <div style={{
-                        borderRadius: 0,
-                        padding: 12,
-                        backgroundColor: "#3a7aff",
-                        display: "flex",
-                        flexDirection: "row",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        marginRight: 16
-                    }}>
-                        <Link
-                            to="/docs" style={{color: "#282C34", fontWeight: "bold", fontSize: 24}}>
-                            Get Started
-                        </Link>
-                    </div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <div
+            style={{
+              borderRadius: 0,
+              padding: 12,
+              backgroundColor: "#3a7aff",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+              marginRight: 16,
+            }}
+          >
+            <Link
+              to="/docs"
+              style={{ color: "#282C34", fontWeight: "bold", fontSize: 24 }}
+            >
+              Get Started
+            </Link>
+          </div>
 
-                    <div style={{
-                        borderRadius: 0,
-                        padding: 12,
-                        display: "flex",
-                        flexDirection: "row",
-                        justifyContent: "center",
-                        alignItems: "center",
-                    }}>
-                        <Link
-                            to="/docs" style={{color: "#3a7aff", fontWeight: "bold", fontSize: 24}}>
-                            Take the Tutorial
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </header>
-    );
+          <div
+            style={{
+              borderRadius: 0,
+              padding: 12,
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Link
+              to="/docs"
+              style={{ color: "#3a7aff", fontWeight: "bold", fontSize: 24 }}
+            >
+              Take the Tutorial
+            </Link>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
 }
 
 export default function Home() {
-    const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
 
-    return (
-        <Layout>
-            <HomepageHeader/>
-            <main>
-                <HomepageFeatures/>
-                <Divider/>
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "100%",
+      }}
+    >
+      <HomepageTopBanner />
 
-                <div style={{width: '100%', display: 'flex', flexDirection: "row", justifyContent: "center"}}>
-                    <div style={{width: 500}}>
-                        <SyntaxHighlighter language="kotlin" style={atomOneLight}>
-                            {simpleFragment}
-                        </SyntaxHighlighter>
-                    </div>
-                </div>
+      <Layout>
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+          <Divider />
 
-
-                <div style={{width: '100%', display: 'flex', flexDirection: "row", justifyContent: "center"}}>
-                    <div style={{width: 500}}>
-                        <SyntaxHighlighter language="kotlin" style={atomOneLight}>
-                            {simpleScreen}
-                        </SyntaxHighlighter>
-                    </div>
-                </div>
-
-            </main>
-
-            <div style={{
-                display: "flex",
-                flexDirection: "row",
-                width: '100%',
-                justifyContent: "center",
-                backgroundColor: "#282C34",
-                padding: 24
-            }}>
-                <div style={{
-                    borderRadius: 0,
-                    padding: 12,
-                    backgroundColor: "#3a7aff",
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginRight: 16
-                }}>
-                    <Link
-                        to="/docs" style={{color: "#282C34", fontWeight: "bold", fontSize: 24}}>
-                        Get Started
-                    </Link>
-                </div>
-
-                <div style={{
-                    borderRadius: 0,
-                    padding: 12,
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}>
-                    <Link
-                        to="/docs" style={{color: "#3a7aff", fontWeight: "bold", fontSize: 24}}>
-                        Take the Tutorial
-                    </Link>
-                </div>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          >
+            <div style={{ width: 500 }}>
+              <SyntaxHighlighter language="kotlin" style={atomOneLight}>
+                {simpleFragment}
+              </SyntaxHighlighter>
             </div>
-        </Layout>
-    );
+          </div>
+
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          >
+            <div style={{ width: 500 }}>
+              <SyntaxHighlighter language="kotlin" style={atomOneLight}>
+                {simpleScreen}
+              </SyntaxHighlighter>
+            </div>
+          </div>
+        </main>
+        <HomepageBottomCta />
+      </Layout>
+    </div>
+  );
 }
