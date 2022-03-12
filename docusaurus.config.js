@@ -59,6 +59,11 @@ const config = {
           },
 
           {
+            type: "docsVersionDropdown",
+            position: "right",
+          },
+
+          {
             href: "https://github.com/dropbox/componentbox",
             label: "GitHub",
             position: "right",
