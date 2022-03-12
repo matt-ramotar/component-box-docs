@@ -66,6 +66,14 @@ const config = {
                 ],
             },
             footer: {
+                logo: {
+                    alt: 'Dropbox Open Source Logo',
+                    src: 'img/open_source.svg',
+                    href: 'https://opensource.dropbox.com',
+                    width: 160,
+                    height: 51,
+                },
+
                 links: [
                     {
                         title: 'Docs',
