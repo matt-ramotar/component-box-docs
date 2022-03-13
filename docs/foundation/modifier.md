@@ -1,14 +1,20 @@
 ---
 title: Modifier
-id: Modifier
+id: modifier
 ---
 
 # Modifier
 
 ## Parameters
 
-| Name                  | Type                                                                    | Default  | Description                                         |
-| --------------------- | ----------------------------------------------------------------------- | -------- | --------------------------------------------------- |
-| `verticalArrangement` | [Arrangement](https://componentbox.io/docs/next/foundation/arrangement) | Required | Vertical arrangement of children components         |
-| `horizontalAlignment` | [Alignment](https://componentbox.io/docs/next/foundation/alignment)     | Required | Horizontal alignment applied to children components |
-| `components`          | Array< [Component](https://componentbox.io/docs/next/component) >       | Required | Description                                         |
+| Name            | Type                                                       | Default | Description                                                   |
+| --------------- | ---------------------------------------------------------- | ------- | ------------------------------------------------------------- |
+| `fillMaxSize`   | `Boolean`                                                  | `Null`  | Whether to have content fill maximum width and maximum height |
+| `fillMaxHeight` | `Boolean`                                                  | `Null`  | Whether to have content fill maximum height                   |
+| `fillMaxWidth`  | `Boolean`                                                  | `Null`  | Whether to have content fill maximum width                    |
+| `height`        | `Int`                                                      | `Null`  | Height of content                                             |
+| `width`         | `Int`                                                      | `Null`  | Width of content                                              |
+| `padding`       | [Padding](https://componentbox.io/docs/foundation/padding) | `Null`  | Space around inner edges of content                           |
+| `margin`        | [Margin](https://componentbox.io/docs/foundation/margin)   | `Null`  | Space around outside edges of content                         |
+| `background`    | `String`                                                   | `Null`  | Background color                                              |
+| `weight`        | `Float`                                                    | `Null`  | Weighted height relative to siblings                          |

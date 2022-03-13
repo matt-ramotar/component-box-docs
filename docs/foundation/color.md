@@ -1,14 +1,14 @@
 ---
 title: Color
-id: Color
+id: color
 ---
 
 # Color
 
 ## Parameters
 
-| Name                  | Type                                                                    | Default  | Description                                         |
-| --------------------- | ----------------------------------------------------------------------- | -------- | --------------------------------------------------- |
-| `verticalArrangement` | [Arrangement](https://componentbox.io/docs/next/foundation/arrangement) | Required | Vertical arrangement of children components         |
-| `horizontalAlignment` | [Alignment](https://componentbox.io/docs/next/foundation/alignment)     | Required | Horizontal alignment applied to children components |
-| `components`          | Array< [Component](https://componentbox.io/docs/next/component) >       | Required | Description                                         |
+| Name    | Type     | Default  | Description | Notes           |
+| ------- | -------- | -------- | ----------- | --------------- |
+| `title` | `String` | Required | Title       | Used by desktop |
+| `light` | `Long`   | Required | Light theme |                 |
+| `dark`  | `Long`   | Required | Dark theme  |                 |

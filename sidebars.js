@@ -18,6 +18,26 @@ const sidebars = {
   apiSidebar: [
     {
       type: "category",
+      label: "Foundation",
+      link: {
+        type: "doc",
+        id: "foundation/foundation",
+      },
+      items: [
+        "foundation/alignment",
+        "foundation/arrangement",
+        "foundation/borderstroke",
+        "foundation/color",
+        "foundation/contentscale",
+        "foundation/margin",
+        "foundation/modifier",
+        "foundation/padding",
+        "foundation/shape",
+      ],
+    },
+
+    {
+      type: "category",
       label: "ComponentBox",
       link: {
         type: "doc",
