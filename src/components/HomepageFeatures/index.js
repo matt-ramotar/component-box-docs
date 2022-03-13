@@ -7,6 +7,7 @@ import styles from './styles.module.css';
 // Powered by Zipline
 // Increased velocity of experimentation
 // Learn once, write anywhere
+// Native
 
 const FeatureList = [
 
@@ -16,7 +17,7 @@ const FeatureList = [
         Svg: require('@site/static/img/tools.svg').default,
         description: (
             <>
-                A Kotlin multiplatform library for building dynamic server-driven native UI
+                A Kotlin multiplatform library for building dynamic server-driven UI
             </>
         ),
     },
@@ -26,7 +27,7 @@ const FeatureList = [
         Svg: require('@site/static/img/interoperability.svg').default,
         description: (
             <>
-                A Kotlin multiplatform library for building dynamic server-driven native UI
+                A Kotlin multiplatform library for building dynamic server-driven UI
             </>
         ),
     },
@@ -36,7 +37,7 @@ const FeatureList = [
         Svg: require('@site/static/img/celebration_spin.svg').default,
         description: (
             <>
-                A Kotlin multiplatform library for building dynamic server-driven native UI
+                A Kotlin multiplatform library for building dynamic server-driven UI
             </>
         ),
     },
@@ -46,7 +47,7 @@ const FeatureList = [
         Svg: require('@site/static/img/devices_couch.svg').default,
         description: (
             <>
-                A Kotlin multiplatform library for building dynamic server-driven native UI
+                A Kotlin multiplatform library for building dynamic server-driven UI
             </>
         ),
     },

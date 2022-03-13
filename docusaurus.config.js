@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/duotoneDark");
 const config = {
   title: "Component Box",
   tagline:
-    "A Kotlin multiplatform library for building dynamic server-driven native UI",
+    "A Kotlin multiplatform library for building dynamic server-driven UI",
   url: "https://componentbox.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
