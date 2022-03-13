@@ -1,9 +1,9 @@
 ---
-title: Banner
-id: banner
+title: BorderStroke
+id: BorderStroke
 ---
 
-# Banner
+# BorderStroke
 
 ## Parameters
 

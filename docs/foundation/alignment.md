@@ -1,9 +1,9 @@
 ---
-title: Banner
-id: banner
+title: Alignment
+id: alignment
 ---
 
-# Banner
+# Alignment
 
 ## Parameters
 

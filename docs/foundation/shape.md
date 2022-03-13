@@ -1,9 +1,9 @@
 ---
-title: Banner
-id: banner
+title: Shape
+id: Shape
 ---
 
-# Banner
+# Shape
 
 ## Parameters
 

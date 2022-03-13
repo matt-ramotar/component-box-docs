@@ -1,9 +1,9 @@
 ---
-title: Banner
-id: banner
+title: Arrangement
+id: arrangement
 ---
 
-# Banner
+# Arrangement
 
 ## Parameters
 

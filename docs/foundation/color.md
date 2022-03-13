@@ -1,9 +1,9 @@
 ---
-title: Banner
-id: banner
+title: Color
+id: Color
 ---
 
-# Banner
+# Color
 
 ## Parameters
 

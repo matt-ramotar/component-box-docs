@@ -1,9 +1,9 @@
 ---
-title: Banner
-id: banner
+title: Modifier
+id: Modifier
 ---
 
-# Banner
+# Modifier
 
 ## Parameters
 
