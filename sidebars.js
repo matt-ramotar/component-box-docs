@@ -15,7 +15,23 @@
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   docsSidebar: ["index", "installation"],
-  apiSidebar: ["component-box", "component"],
+  apiSidebar: [
+    {
+      type: "category",
+      label: "ComponentBox",
+      link: {
+        type: "doc",
+        id: "componentbox/componentbox",
+      },
+      items: [
+        "componentbox/banner",
+        "componentbox/modal",
+        "componentbox/screen",
+      ],
+    },
+
+    "component",
+  ],
 
   // But you can create a sidebar manually
   /*

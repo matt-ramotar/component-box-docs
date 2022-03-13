@@ -53,7 +53,7 @@ const config = {
 
           {
             type: "doc",
-            docId: "component-box",
+            docId: "componentbox/componentbox",
             position: "left",
             label: "API",
           },
