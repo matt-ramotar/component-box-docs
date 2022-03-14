@@ -50,7 +50,25 @@ const sidebars = {
       ],
     },
 
-    "component",
+    {
+      type: "category",
+      label: "Component",
+      link: {
+        type: "doc",
+        id: "component/component",
+      },
+      items: [
+        "component/box",
+        "component/button",
+        "component/column",
+        "component/drawable",
+        "component/row",
+        "component/surface",
+        "component/switch",
+        "component/text",
+        "component/vector",
+      ],
+    },
   ],
 
   // But you can create a sidebar manually
