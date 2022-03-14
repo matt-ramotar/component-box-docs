@@ -7,8 +7,9 @@ id: switch
 
 ## Parameters
 
-| Name                  | Type                                                               | Default  | Description                                         |
-| --------------------- | ------------------------------------------------------------------ | -------- | --------------------------------------------------- |
-| `verticalArrangement` | [Arrangement](https://componentbox.io/docs/foundation/arrangement) | Required | Vertical arrangement of children components         |
-| `horizontalAlignment` | [Alignment](https://componentbox.io/docs/foundation/alignment)     | Required | Horizontal alignment applied to children components |
-| `components`          | Array< [Component](https://componentbox.io/docs/component) >       | Required | Children components                                 |
+| Name        | Type                                                         | Default  | Description                        |
+| ----------- | ------------------------------------------------------------ | -------- | ---------------------------------- |
+| `id`        | `String `                                                    | Required | Identifier                         |
+| `action`    | `String`                                                     | `Null`   | Action identifier                  |
+| `modifier`  | [Modifier](https://componentbox.io/docs/foundation/modifier) | `Null`   | Modifier object                    |
+| `isChecked` | `Boolean`                                                    | `Null`   | Whether switch is checked at start |
